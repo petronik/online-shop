@@ -12,7 +12,7 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   constructor( private productService: ProductService) { }
 
-  getProducts(){
+  getProducts(): void{
     this.products = this.productService.getProducts();
   }
 

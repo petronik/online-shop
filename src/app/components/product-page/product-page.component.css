@@ -1,0 +1,21 @@
+.mat-card-header{
+    justify-content: center;
+  }
+  .btn{
+    background-color: red;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.btn:hover{
+  background-color:rgb(246, 161, 127);
+  border: 1px solid gray;
+}
+.example-card {
+    max-width: 400px;
+    background-color:rgb(253, 219, 174);
+    margin: auto;
+    padding: 50px 20px;
+    box-shadow: 10px 10px 20px;
+    cursor: pointer;
+  }

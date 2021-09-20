@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { PRODUCTS } from '../mock-products';
 import { Product } from '../models/product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor() {}
 
-  constructor() { }
-
-  getProducts(): Product[]{
+  getProducts(): Product[] {
     return PRODUCTS;
   }
-  getProduct(id:number) : Product | undefined{
-    const prod = PRODUCTS.find((p)=> p.id === id);
-    if (prod) return prod;
-    return undefined;
+
+  getProduct(id: number): Observable<Product | undefined> {
+    const prod = PRODUCTS.find((p) => p.id === id);
+    return of(prod);
   }
 }

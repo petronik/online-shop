@@ -6,8 +6,8 @@ export interface Product {
     name: string;
     price: number;
     description: string;
-    imageUrl: any;
+    imageUrl: string;
     sizes: Size[];
-    insurance: Insurance[];
+    insurance: String[];
 
 }
